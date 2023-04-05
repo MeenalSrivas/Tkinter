@@ -1,0 +1,70 @@
+<<<<<<< HEAD
+from tkinter import *
+root=Tk()
+root.geometry("547x665")
+root.title("Vs code")
+
+mainmenu=Menu(root)
+m1=Menu(mainmenu,tearoff=0)
+m1.add_command(label="new text file")
+m1.add_command(label="search")
+m1.add_separator()
+m1.add_command(label="new file")
+m1.add_command(label="new window")
+root.config(menu=mainmenu)
+mainmenu.add_cascade(label="file",menu=m1)
+
+m2=Menu(mainmenu,tearoff=0)
+m2.add_command(label="cut")
+m2.add_command(label="copy")
+m2.add_separator()
+m2.add_command(label="paste")
+m2.add_command(label="trim")
+root.config(menu=mainmenu)
+mainmenu.add_cascade(label="edit",menu=m2)
+
+m3=Menu(mainmenu,tearoff=0)
+m3.add_command(label="new text file")
+m3.add_command(label="search")
+m3.add_separator()
+m3.add_command(label="new file")
+m3.add_command(label="new window")
+root.config(menu=mainmenu)
+mainmenu.add_cascade(label="selection",menu=m3)
+
+=======
+from tkinter import *
+root=Tk()
+root.geometry("547x665")
+root.title("Vs code")
+
+mainmenu=Menu(root)
+m1=Menu(mainmenu,tearoff=0)
+m1.add_command(label="new text file")
+m1.add_command(label="search")
+m1.add_separator()
+m1.add_command(label="new file")
+m1.add_command(label="new window")
+root.config(menu=mainmenu)
+mainmenu.add_cascade(label="file",menu=m1)
+
+m2=Menu(mainmenu,tearoff=0)
+m2.add_command(label="cut")
+m2.add_command(label="copy")
+m2.add_separator()
+m2.add_command(label="paste")
+m2.add_command(label="trim")
+root.config(menu=mainmenu)
+mainmenu.add_cascade(label="edit",menu=m2)
+
+m3=Menu(mainmenu,tearoff=0)
+m3.add_command(label="new text file")
+m3.add_command(label="search")
+m3.add_separator()
+m3.add_command(label="new file")
+m3.add_command(label="new window")
+root.config(menu=mainmenu)
+mainmenu.add_cascade(label="selection",menu=m3)
+
+>>>>>>> c9620fbf3a4515d86fcebd2f69f58b69fe37309f
+root.mainloop()
